@@ -6,9 +6,9 @@
 //  Copyright © 2020 xc. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
+//https://github.com/HahnLoving/Hahn_Tabbar_Swift
 class MyUiTabBarView: UIViewController {
     
     /**
@@ -66,7 +66,26 @@ extension MyUiTabBarView : UITableViewDelegate,UITableViewDataSource{
             let  tqlTabBar = TqlTabBar()
             self.navigationController?.pushViewController(tqlTabBar, animated: true)
             break
-            
+        case 3:
+            let  ftbanTabBar = TaoBaoCustomTabBarViewController()
+            self.navigationController?.pushViewController(ftbanTabBar, animated: true)
+            break
+        case 4:
+            let  ftbanTabBar = AnimationTabBarViewController()
+            self.navigationController?.pushViewController(ftbanTabBar, animated: true)
+            break
+        case 5:
+            let jdTabBar = JdTabBar();
+            self.navigationController?.pushViewController(jdTabBar, animated: true)
+            break
+        case 6:
+            let jdTabBar = SlidingViewController();
+            self.navigationController?.pushViewController(jdTabBar, animated: true)
+            break
+        case 7:
+            let reddianVC = ReddianJiaobiaoTabBarViewController();
+            self.navigationController?.pushViewController(reddianVC, animated: true)
+            break
         default:
             break
         }

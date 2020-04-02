@@ -15,7 +15,7 @@
 		5710E1B724245D9E007EE75A /* IosSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1B624245D9E007EE75A /* IosSwiftDemoTests.swift */; };
 		5710E1C224245D9E007EE75A /* IosSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1C124245D9E007EE75A /* IosSwiftDemoUITests.swift */; };
 		5710E1D424246857007EE75A /* UIViewController扩展.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1D324246857007EE75A /* UIViewController扩展.swift */; };
-		5710E1D824246F88007EE75A /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1D724246F88007EE75A /* MainVc.swift */; };
+		5710E1D824246F88007EE75A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1D724246F88007EE75A /* Main.swift */; };
 		5710E1F52424D484007EE75A /* File1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1F32424D484007EE75A /* File1.swift */; };
 		5710E1F62424D484007EE75A /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5710E1F42424D484007EE75A /* View.xib */; };
 		5710E1FA2425C7D2007EE75A /* LieBiao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E1F92425C7D2007EE75A /* LieBiao.swift */; };
@@ -26,21 +26,38 @@
 		5710E20F2425D977007EE75A /* TabBarSubPage5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E20B2425D976007EE75A /* TabBarSubPage5.swift */; };
 		5710E2102425D977007EE75A /* TabBarSubPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E20C2425D977007EE75A /* TabBarSubPage2.swift */; };
 		5710E2122425D9C6007EE75A /* MyUiTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E2112425D9C6007EE75A /* MyUiTabBarView.swift */; };
-		5710E2202425E24C007EE75A /* 添加_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2152425E24C007EE75A /* 添加_选中@2x.png */; };
-		5710E2212425E24C007EE75A /* 首页_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2162425E24C007EE75A /* 首页_选中@2x.png */; };
-		5710E2222425E24C007EE75A /* 首页_未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2172425E24C007EE75A /* 首页_未选中@2x.png */; };
-		5710E2242425E24C007EE75A /* 我的_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2192425E24C007EE75A /* 我的_选中@2x.png */; };
-		5710E2252425E24C007EE75A /* 朋友_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21A2425E24C007EE75A /* 朋友_选中@2x.png */; };
-		5710E2262425E24C007EE75A /* 朋友_未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21B2425E24C007EE75A /* 朋友_未选中@2x.png */; };
-		5710E2272425E24C007EE75A /* 发现_选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21C2425E24C007EE75A /* 发现_选中@2x.png */; };
-		5710E2282425E24C007EE75A /* 添加_未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21D2425E24C007EE75A /* 添加_未选中@2x.png */; };
-		5710E2292425E24C007EE75A /* 我的_未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21E2425E24C007EE75A /* 我的_未选中@2x.png */; };
-		5710E22D2425E630007EE75A /* 发现_未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E22C2425E630007EE75A /* 发现_未选中@2x.png */; };
+		5710E2202425E24C007EE75A /* add_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2152425E24C007EE75A /* add_selected@2x.png */; };
+		5710E2212425E24C007EE75A /* home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2162425E24C007EE75A /* home_selected@2x.png */; };
+		5710E2222425E24C007EE75A /* home_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2172425E24C007EE75A /* home_unselected@2x.png */; };
+		5710E2242425E24C007EE75A /* mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2192425E24C007EE75A /* mine_selected@2x.png */; };
+		5710E2252425E24C007EE75A /* friend_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21A2425E24C007EE75A /* friend_selected@2x.png */; };
+		5710E2262425E24C007EE75A /* friend_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21B2425E24C007EE75A /* friend_unselected@2x.png */; };
+		5710E2272425E24C007EE75A /* find_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21C2425E24C007EE75A /* find_selected@2x.png */; };
+		5710E2282425E24C007EE75A /* add_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21D2425E24C007EE75A /* add_unselected@2x.png */; };
+		5710E2292425E24C007EE75A /* mine_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E21E2425E24C007EE75A /* mine_unselected@2x.png */; };
+		5710E22D2425E630007EE75A /* find_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E22C2425E630007EE75A /* find_unselected@2x.png */; };
 		5710E22F2425F1A0007EE75A /* JdJhTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E22E2425F1A0007EE75A /* JdJhTabBar.swift */; };
 		5710E2312425FC55007EE75A /* post_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710E2302425FC55007EE75A /* post_normal@2x.png */; };
 		5710E234242608A2007EE75A /* XcUiClolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E233242608A2007EE75A /* XcUiClolor.swift */; };
-		5710E23624260C44007EE75A /* TabBarSubPage6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E23524260C44007EE75A /* TabBarSubPage6.swift */; };
 		5710E23824260EB6007EE75A /* TqlTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710E23724260EB6007EE75A /* TqlTabBar.swift */; };
+		5745ABDA243438EB00C068F9 /* JdTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABD9243438EB00C068F9 /* JdTabBar.swift */; };
+		5745ABE12434489E00C068F9 /* TaoBaoCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABDF2434489E00C068F9 /* TaoBaoCustomTabBar.swift */; };
+		5745ABE22434489E00C068F9 /* TaoBaoCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABE02434489E00C068F9 /* TaoBaoCustomTabBarViewController.swift */; };
+		5745ABE424344B2800C068F9 /* AnimationTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABE324344B2800C068F9 /* AnimationTabBarViewController.swift */; };
+		5745ABE824344B7000C068F9 /* SlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABE724344B7000C068F9 /* SlidingViewController.swift */; };
+		5745ABEA24344F5700C068F9 /* ReddianJiaobiaoTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABE924344F5700C068F9 /* ReddianJiaobiaoTabBarViewController.swift */; };
+		5745ABEC243470F000C068F9 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5745ABEB243470F000C068F9 /* music.wav */; };
+		5745ABEE2434848800C068F9 /* UITabBar+HahnBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABED2434848800C068F9 /* UITabBar+HahnBadge.swift */; };
+		5745ABF1243485E700C068F9 /* 补贴@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5745ABEF243485E700C068F9 /* 补贴@2x.png */; };
+		5745ABF2243485E700C068F9 /* 补贴@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5745ABF0243485E700C068F9 /* 补贴@3x.png */; };
+		5745ABF624348DCE00C068F9 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABF524348DCE00C068F9 /* SuperViewController.swift */; };
+		5745ABF824348F0900C068F9 /* SlidingTabBarSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABF724348F0900C068F9 /* SlidingTabBarSubPage.swift */; };
+		5745ABFD2434905800C068F9 /* JbTabBarSubage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745ABFC2434905800C068F9 /* JbTabBarSubage.swift */; };
+		5745AC3B2435962100C068F9 /* Main_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745AC3A2435962100C068F9 /* Main_Home.swift */; };
+		5745AC3D24359D4900C068F9 /* JdqtTabBarSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745AC3C24359D4900C068F9 /* JdqtTabBarSubPage.swift */; };
+		5745AC3F24359E4500C068F9 /* JdqtNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745AC3E24359E4500C068F9 /* JdqtNewPage.swift */; };
+		5745AC432435A6E000C068F9 /* JdJhNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745AC422435A6E000C068F9 /* JdJhNewPage.swift */; };
+		5745AC452435A74800C068F9 /* TqlNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745AC442435A74800C068F9 /* TqlNewPage.swift */; };
 		578D41C224260FCE00F8B141 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D41C124260FCE00F8B141 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +93,7 @@
 		5710E1C124245D9E007EE75A /* IosSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		5710E1C324245D9E007EE75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5710E1D324246857007EE75A /* UIViewController扩展.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController扩展.swift"; sourceTree = "<group>"; };
-		5710E1D724246F88007EE75A /* MainVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
+		5710E1D724246F88007EE75A /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		5710E1F32424D484007EE75A /* File1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File1.swift; sourceTree = "<group>"; };
 		5710E1F42424D484007EE75A /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		5710E1F92425C7D2007EE75A /* LieBiao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LieBiao.swift; sourceTree = "<group>"; };
@@ -87,23 +104,40 @@
 		5710E20B2425D976007EE75A /* TabBarSubPage5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarSubPage5.swift; sourceTree = "<group>"; };
 		5710E20C2425D977007EE75A /* TabBarSubPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarSubPage2.swift; sourceTree = "<group>"; };
 		5710E2112425D9C6007EE75A /* MyUiTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUiTabBarView.swift; sourceTree = "<group>"; };
-		5710E2152425E24C007EE75A /* 添加_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加_选中@2x.png"; sourceTree = "<group>"; };
-		5710E2162425E24C007EE75A /* 首页_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_选中@2x.png"; sourceTree = "<group>"; };
-		5710E2172425E24C007EE75A /* 首页_未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_未选中@2x.png"; sourceTree = "<group>"; };
-		5710E2192425E24C007EE75A /* 我的_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的_选中@2x.png"; sourceTree = "<group>"; };
-		5710E21A2425E24C007EE75A /* 朋友_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友_选中@2x.png"; sourceTree = "<group>"; };
-		5710E21B2425E24C007EE75A /* 朋友_未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友_未选中@2x.png"; sourceTree = "<group>"; };
-		5710E21C2425E24C007EE75A /* 发现_选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现_选中@2x.png"; sourceTree = "<group>"; };
-		5710E21D2425E24C007EE75A /* 添加_未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加_未选中@2x.png"; sourceTree = "<group>"; };
-		5710E21E2425E24C007EE75A /* 我的_未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的_未选中@2x.png"; sourceTree = "<group>"; };
+		5710E2152425E24C007EE75A /* add_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_selected@2x.png"; sourceTree = "<group>"; };
+		5710E2162425E24C007EE75A /* home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_selected@2x.png"; sourceTree = "<group>"; };
+		5710E2172425E24C007EE75A /* home_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_unselected@2x.png"; sourceTree = "<group>"; };
+		5710E2192425E24C007EE75A /* mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_selected@2x.png"; sourceTree = "<group>"; };
+		5710E21A2425E24C007EE75A /* friend_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friend_selected@2x.png"; sourceTree = "<group>"; };
+		5710E21B2425E24C007EE75A /* friend_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friend_unselected@2x.png"; sourceTree = "<group>"; };
+		5710E21C2425E24C007EE75A /* find_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find_selected@2x.png"; sourceTree = "<group>"; };
+		5710E21D2425E24C007EE75A /* add_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_unselected@2x.png"; sourceTree = "<group>"; };
+		5710E21E2425E24C007EE75A /* mine_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_unselected@2x.png"; sourceTree = "<group>"; };
 		5710E22A2425E265007EE75A /* 无用@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "无用@3x.png"; sourceTree = "<group>"; };
 		5710E22B2425E265007EE75A /* 无用@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "无用@2x.png"; sourceTree = "<group>"; };
-		5710E22C2425E630007EE75A /* 发现_未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现_未选中@2x.png"; sourceTree = "<group>"; };
+		5710E22C2425E630007EE75A /* find_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find_unselected@2x.png"; sourceTree = "<group>"; };
 		5710E22E2425F1A0007EE75A /* JdJhTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdJhTabBar.swift; sourceTree = "<group>"; };
 		5710E2302425FC55007EE75A /* post_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "post_normal@2x.png"; sourceTree = "<group>"; };
 		5710E233242608A2007EE75A /* XcUiClolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcUiClolor.swift; sourceTree = "<group>"; };
-		5710E23524260C44007EE75A /* TabBarSubPage6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarSubPage6.swift; sourceTree = "<group>"; };
 		5710E23724260EB6007EE75A /* TqlTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TqlTabBar.swift; sourceTree = "<group>"; };
+		5745ABD9243438EB00C068F9 /* JdTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdTabBar.swift; sourceTree = "<group>"; };
+		5745ABDF2434489E00C068F9 /* TaoBaoCustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaoBaoCustomTabBar.swift; sourceTree = "<group>"; };
+		5745ABE02434489E00C068F9 /* TaoBaoCustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaoBaoCustomTabBarViewController.swift; sourceTree = "<group>"; };
+		5745ABE324344B2800C068F9 /* AnimationTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTabBarViewController.swift; sourceTree = "<group>"; };
+		5745ABE724344B7000C068F9 /* SlidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingViewController.swift; sourceTree = "<group>"; };
+		5745ABE924344F5700C068F9 /* ReddianJiaobiaoTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReddianJiaobiaoTabBarViewController.swift; sourceTree = "<group>"; };
+		5745ABEB243470F000C068F9 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music.wav; sourceTree = "<group>"; };
+		5745ABED2434848800C068F9 /* UITabBar+HahnBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+HahnBadge.swift"; sourceTree = "<group>"; };
+		5745ABEF243485E700C068F9 /* 补贴@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "补贴@2x.png"; sourceTree = "<group>"; };
+		5745ABF0243485E700C068F9 /* 补贴@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "补贴@3x.png"; sourceTree = "<group>"; };
+		5745ABF524348DCE00C068F9 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		5745ABF724348F0900C068F9 /* SlidingTabBarSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabBarSubPage.swift; sourceTree = "<group>"; };
+		5745ABFC2434905800C068F9 /* JbTabBarSubage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JbTabBarSubage.swift; sourceTree = "<group>"; };
+		5745AC3A2435962100C068F9 /* Main_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Home.swift; sourceTree = "<group>"; };
+		5745AC3C24359D4900C068F9 /* JdqtTabBarSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdqtTabBarSubPage.swift; sourceTree = "<group>"; };
+		5745AC3E24359E4500C068F9 /* JdqtNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdqtNewPage.swift; sourceTree = "<group>"; };
+		5745AC422435A6E000C068F9 /* JdJhNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdJhNewPage.swift; sourceTree = "<group>"; };
+		5745AC442435A74800C068F9 /* TqlNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TqlNewPage.swift; sourceTree = "<group>"; };
 		578D41C124260FCE00F8B141 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +189,7 @@
 		5710E19E24245D9D007EE75A /* IosSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABEB243470F000C068F9 /* music.wav */,
 				5710E23224260879007EE75A /* 扩展 */,
 				5710E2132425E24C007EE75A /* 图片 */,
 				5710E1CF24246709007EE75A /* 代码 */,
@@ -208,8 +243,9 @@
 		5710E1D624246F28007EE75A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				5710E1D724246F88007EE75A /* MainVc.swift */,
+				5710E1D724246F88007EE75A /* Main.swift */,
 				5710E1A524245D9D007EE75A /* Main.storyboard */,
+				5745AC3A2435962100C068F9 /* Main_Home.swift */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -227,6 +263,7 @@
 		5710E1F72425C7D2007EE75A /* UITabBarView */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABED2434848800C068F9 /* UITabBar+HahnBadge.swift */,
 				5710E2042425D680007EE75A /* 动画音效按钮的TabBar */,
 				5710E1FD2425D67F007EE75A /* 仿淘宝按钮的TabBar */,
 				5710E2032425D680007EE75A /* 滑动隐藏的TabBar */,
@@ -240,7 +277,6 @@
 				5710E2092425D976007EE75A /* TabBarSubPage3.swift */,
 				5710E20A2425D976007EE75A /* TabBarSubPage4.swift */,
 				5710E20B2425D976007EE75A /* TabBarSubPage5.swift */,
-				5710E23524260C44007EE75A /* TabBarSubPage6.swift */,
 				5710E2112425D9C6007EE75A /* MyUiTabBarView.swift */,
 			);
 			path = UITabBarView;
@@ -257,6 +293,8 @@
 		5710E1FD2425D67F007EE75A /* 仿淘宝按钮的TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABDF2434489E00C068F9 /* TaoBaoCustomTabBar.swift */,
+				5745ABE02434489E00C068F9 /* TaoBaoCustomTabBarViewController.swift */,
 			);
 			path = "仿淘宝按钮的TabBar";
 			sourceTree = "<group>";
@@ -272,6 +310,8 @@
 		5710E1FF2425D67F007EE75A /* 自定义小红点的TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABE924344F5700C068F9 /* ReddianJiaobiaoTabBarViewController.swift */,
+				5745ABFC2434905800C068F9 /* JbTabBarSubage.swift */,
 			);
 			path = "自定义小红点的TabBar";
 			sourceTree = "<group>";
@@ -280,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				5710E22E2425F1A0007EE75A /* JdJhTabBar.swift */,
+				5745AC422435A6E000C068F9 /* JdJhNewPage.swift */,
 			);
 			path = "简单加号按钮的TabBar";
 			sourceTree = "<group>";
@@ -287,6 +328,9 @@
 		5710E2012425D67F007EE75A /* 京东起弹TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABD9243438EB00C068F9 /* JdTabBar.swift */,
+				5745AC3C24359D4900C068F9 /* JdqtTabBarSubPage.swift */,
+				5745AC3E24359E4500C068F9 /* JdqtNewPage.swift */,
 			);
 			path = "京东起弹TabBar";
 			sourceTree = "<group>";
@@ -296,6 +340,7 @@
 			children = (
 				5710E23724260EB6007EE75A /* TqlTabBar.swift */,
 				578D41C124260FCE00F8B141 /* CustomTabBar.swift */,
+				5745AC442435A74800C068F9 /* TqlNewPage.swift */,
 			);
 			path = "凸起来加号按钮的TabBar";
 			sourceTree = "<group>";
@@ -303,6 +348,9 @@
 		5710E2032425D680007EE75A /* 滑动隐藏的TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABE724344B7000C068F9 /* SlidingViewController.swift */,
+				5745ABF524348DCE00C068F9 /* SuperViewController.swift */,
+				5745ABF724348F0900C068F9 /* SlidingTabBarSubPage.swift */,
 			);
 			path = "滑动隐藏的TabBar";
 			sourceTree = "<group>";
@@ -310,6 +358,7 @@
 		5710E2042425D680007EE75A /* 动画音效按钮的TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABE324344B2800C068F9 /* AnimationTabBarViewController.swift */,
 			);
 			path = "动画音效按钮的TabBar";
 			sourceTree = "<group>";
@@ -326,17 +375,19 @@
 		5710E2142425E24C007EE75A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5745ABEF243485E700C068F9 /* 补贴@2x.png */,
+				5745ABF0243485E700C068F9 /* 补贴@3x.png */,
 				5710E2302425FC55007EE75A /* post_normal@2x.png */,
-				5710E22C2425E630007EE75A /* 发现_未选中@2x.png */,
-				5710E2162425E24C007EE75A /* 首页_选中@2x.png */,
-				5710E2172425E24C007EE75A /* 首页_未选中@2x.png */,
-				5710E2192425E24C007EE75A /* 我的_选中@2x.png */,
-				5710E21A2425E24C007EE75A /* 朋友_选中@2x.png */,
-				5710E21B2425E24C007EE75A /* 朋友_未选中@2x.png */,
-				5710E21C2425E24C007EE75A /* 发现_选中@2x.png */,
-				5710E21D2425E24C007EE75A /* 添加_未选中@2x.png */,
-				5710E2152425E24C007EE75A /* 添加_选中@2x.png */,
-				5710E21E2425E24C007EE75A /* 我的_未选中@2x.png */,
+				5710E22C2425E630007EE75A /* find_unselected@2x.png */,
+				5710E2162425E24C007EE75A /* home_selected@2x.png */,
+				5710E2172425E24C007EE75A /* home_unselected@2x.png */,
+				5710E2192425E24C007EE75A /* mine_selected@2x.png */,
+				5710E21A2425E24C007EE75A /* friend_selected@2x.png */,
+				5710E21B2425E24C007EE75A /* friend_unselected@2x.png */,
+				5710E21C2425E24C007EE75A /* find_selected@2x.png */,
+				5710E21D2425E24C007EE75A /* add_unselected@2x.png */,
+				5710E2152425E24C007EE75A /* add_selected@2x.png */,
+				5710E21E2425E24C007EE75A /* mine_unselected@2x.png */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -463,20 +514,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5710E1F62424D484007EE75A /* View.xib in Resources */,
-				5710E2242425E24C007EE75A /* 我的_选中@2x.png in Resources */,
+				5710E2242425E24C007EE75A /* mine_selected@2x.png in Resources */,
+				5745ABF1243485E700C068F9 /* 补贴@2x.png in Resources */,
 				5710E1AC24245D9E007EE75A /* LaunchScreen.storyboard in Resources */,
-				5710E2272425E24C007EE75A /* 发现_选中@2x.png in Resources */,
+				5710E2272425E24C007EE75A /* find_selected@2x.png in Resources */,
 				5710E1A924245D9E007EE75A /* Assets.xcassets in Resources */,
+				5745ABF2243485E700C068F9 /* 补贴@3x.png in Resources */,
 				5710E1A724245D9D007EE75A /* Main.storyboard in Resources */,
-				5710E2202425E24C007EE75A /* 添加_选中@2x.png in Resources */,
-				5710E2222425E24C007EE75A /* 首页_未选中@2x.png in Resources */,
-				5710E2252425E24C007EE75A /* 朋友_选中@2x.png in Resources */,
-				5710E2292425E24C007EE75A /* 我的_未选中@2x.png in Resources */,
-				5710E22D2425E630007EE75A /* 发现_未选中@2x.png in Resources */,
-				5710E2262425E24C007EE75A /* 朋友_未选中@2x.png in Resources */,
+				5745ABEC243470F000C068F9 /* music.wav in Resources */,
+				5710E2202425E24C007EE75A /* add_selected@2x.png in Resources */,
+				5710E2222425E24C007EE75A /* home_unselected@2x.png in Resources */,
+				5710E2252425E24C007EE75A /* friend_selected@2x.png in Resources */,
+				5710E2292425E24C007EE75A /* mine_unselected@2x.png in Resources */,
+				5710E22D2425E630007EE75A /* find_unselected@2x.png in Resources */,
+				5710E2262425E24C007EE75A /* friend_unselected@2x.png in Resources */,
 				5710E2312425FC55007EE75A /* post_normal@2x.png in Resources */,
-				5710E2212425E24C007EE75A /* 首页_选中@2x.png in Resources */,
-				5710E2282425E24C007EE75A /* 添加_未选中@2x.png in Resources */,
+				5710E2212425E24C007EE75A /* home_selected@2x.png in Resources */,
+				5710E2282425E24C007EE75A /* add_unselected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,21 +558,35 @@
 				5710E2122425D9C6007EE75A /* MyUiTabBarView.swift in Sources */,
 				5710E22F2425F1A0007EE75A /* JdJhTabBar.swift in Sources */,
 				5710E2102425D977007EE75A /* TabBarSubPage2.swift in Sources */,
+				5745AC452435A74800C068F9 /* TqlNewPage.swift in Sources */,
 				5710E20D2425D977007EE75A /* TabBarSubPage3.swift in Sources */,
+				5745ABE12434489E00C068F9 /* TaoBaoCustomTabBar.swift in Sources */,
+				5745ABEA24344F5700C068F9 /* ReddianJiaobiaoTabBarViewController.swift in Sources */,
 				578D41C224260FCE00F8B141 /* CustomTabBar.swift in Sources */,
 				5710E23824260EB6007EE75A /* TqlTabBar.swift in Sources */,
+				5745ABE22434489E00C068F9 /* TaoBaoCustomTabBarViewController.swift in Sources */,
+				5745AC432435A6E000C068F9 /* JdJhNewPage.swift in Sources */,
 				5710E2082425D830007EE75A /* TabBarSubPage1.swift in Sources */,
+				5745ABE424344B2800C068F9 /* AnimationTabBarViewController.swift in Sources */,
 				5710E1A024245D9D007EE75A /* AppDelegate.swift in Sources */,
 				5710E20F2425D977007EE75A /* TabBarSubPage5.swift in Sources */,
+				5745AC3B2435962100C068F9 /* Main_Home.swift in Sources */,
+				5745ABDA243438EB00C068F9 /* JdTabBar.swift in Sources */,
+				5745ABF624348DCE00C068F9 /* SuperViewController.swift in Sources */,
 				5710E2062425D6AF007EE75A /* XtTabBar.swift in Sources */,
-				5710E23624260C44007EE75A /* TabBarSubPage6.swift in Sources */,
+				5745ABF824348F0900C068F9 /* SlidingTabBarSubPage.swift in Sources */,
+				5745ABFD2434905800C068F9 /* JbTabBarSubage.swift in Sources */,
 				5710E20E2425D977007EE75A /* TabBarSubPage4.swift in Sources */,
-				5710E1D824246F88007EE75A /* MainVc.swift in Sources */,
+				5745ABEE2434848800C068F9 /* UITabBar+HahnBadge.swift in Sources */,
+				5710E1D824246F88007EE75A /* Main.swift in Sources */,
 				5710E1D424246857007EE75A /* UIViewController扩展.swift in Sources */,
+				5745AC3D24359D4900C068F9 /* JdqtTabBarSubPage.swift in Sources */,
 				5710E1F52424D484007EE75A /* File1.swift in Sources */,
 				5710E234242608A2007EE75A /* XcUiClolor.swift in Sources */,
 				5710E1FA2425C7D2007EE75A /* LieBiao.swift in Sources */,
 				5710E1A224245D9D007EE75A /* SceneDelegate.swift in Sources */,
+				5745ABE824344B7000C068F9 /* SlidingViewController.swift in Sources */,
+				5745AC3F24359E4500C068F9 /* JdqtNewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

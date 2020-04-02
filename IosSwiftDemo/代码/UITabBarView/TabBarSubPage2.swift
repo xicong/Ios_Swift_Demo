@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TabBarSubPage2: UIViewController {
+class TabBarSubPage2: SuperViewController {
     
     
     override func viewDidLoad() {
@@ -22,6 +22,9 @@ class TabBarSubPage2: UIViewController {
         uiLab.textAlignment = .center
         uiLab.text = "发现"
         self.view.addSubview(uiLab)
+        
+        
     }
     
 }
+

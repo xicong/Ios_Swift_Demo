@@ -22,6 +22,16 @@ class TabBarSubPage5: UIViewController {
         uiLab.textAlignment = .center
         uiLab.text = "我的"
         self.view.addSubview(uiLab)
+        
+        let  backBtn = UIButton(frame: CGRect(x: 0, y: 300, width: 100, height: 50));
+        backBtn.backgroundColor = UIColor.red
+        backBtn.setTitle("返回", for: .normal)
+        backBtn.addTarget(self, action: #selector(backClick), for: .touchUpInside)
+        self.view.addSubview(backBtn)
+    }
+    
+    @objc func backClick(){
+        self.tabBarController?.navigationController?.popViewController(animated: true)
     }
     
 }

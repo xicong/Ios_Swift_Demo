@@ -25,5 +25,6 @@ class TabBarSubPage1: UIViewController {
         self.view.addSubview(uiLab)
     
     }
+
     
 }

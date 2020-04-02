@@ -19,31 +19,32 @@ class XtTabBar: UITabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.setTabBar()
     }
     
     func setTabBar(){
         
-        let page1 = TabBarSubPage1()
-        let page2 = TabBarSubPage2()
-        let page3 = TabBarSubPage3()
-        let page4 = TabBarSubPage4()
-        let page5 = TabBarSubPage5()
+        let xtTabBar1 = TabBarSubPage1()
+        let xtTabBar2 = TabBarSubPage2()
+        let xtTabBar3 = TabBarSubPage3()
+        let xtTabBar4 = TabBarSubPage4()
+        let xtTabBar5 = TabBarSubPage5()
         
-        self.setTabbarItemStyle(viewController:page1, img: "首页_未选中", selectImg: "首页_选中", title: "首页")
-        self.setTabbarItemStyle(viewController:page2, img: "发现_未选中", selectImg: "发现_选中", title: "发现")
-        self.setTabbarItemStyle(viewController:page3, img: "添加_未选中", selectImg: "添加_选中", title: "添加")
-        self.setTabbarItemStyle(viewController:page4, img: "朋友_未选中", selectImg: "朋友_选中", title: "朋友")
-        self.setTabbarItemStyle(viewController:page5, img: "我的_未选中", selectImg: "我的_选中", title: "我的")
+        self.setTabbarItemStyle(viewController:xtTabBar1, img: "home_unselected", selectImg: "home_selected", title: "首页")
+        self.setTabbarItemStyle(viewController:xtTabBar2, img: "find_unselected", selectImg: "find_selected", title: "发现")
+        self.setTabbarItemStyle(viewController:xtTabBar3, img: "add_unselected", selectImg: "add_selected", title: "添加")
+        self.setTabbarItemStyle(viewController:xtTabBar4, img: "friend_unselected", selectImg: "friend_selected", title: "朋友")
+        self.setTabbarItemStyle(viewController:xtTabBar5, img: "mine_unselected", selectImg: "mine_selected", title: "我的")
         
         self.tabBar.tintColor = UIColor.gray
         self.tabBar.isTranslucent = true
         self.viewControllers = [
-            UINavigationController(rootViewController: page1),
-            UINavigationController(rootViewController: page2),
-            UINavigationController(rootViewController: page3),
-            UINavigationController(rootViewController: page4),
-            UINavigationController(rootViewController: page5),
+            UINavigationController(rootViewController: xtTabBar1),
+            UINavigationController(rootViewController: xtTabBar2),
+            UINavigationController(rootViewController: xtTabBar3),
+            UINavigationController(rootViewController: xtTabBar4),
+            UINavigationController(rootViewController: xtTabBar5),
         ]
     }
     

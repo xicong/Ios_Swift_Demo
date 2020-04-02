@@ -34,6 +34,11 @@ class TqlTabBar: UITabBarController {
         self.setTabBar()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     func setTabBar(){
         
         let page1 = TabBarSubPage1()
@@ -41,9 +46,9 @@ class TqlTabBar: UITabBarController {
         let page3 = TabBarSubPage3()
         
         
-        self.setTabbarItemStyle(viewController:page1, img: "首页_未选中", selectImg: "首页_选中", title: "首页",tag: 1)
-        self.setTabbarItemStyle(viewController:page2, img: "发现_未选中", selectImg: "发现_选中", title: "发现",tag: 2)
-        self.setTabbarItemStyle(viewController:page3, img: "post_normal", selectImg: "", title: "",tag: 3)
+        self.setTabbarItemStyle(viewController:page1, img: "home_unselected", selectImg: "home_selected", title: "首页",tag: 1)
+        self.setTabbarItemStyle(viewController:page2, img: "find_unselected", selectImg: "find_selected", title: "发现",tag: 2)
+        self.setTabbarItemStyle(viewController:page3, img: "add_unselected", selectImg: "add_selected", title: "添加",tag: 3)
         
         self.tabBar.tintColor = UIColor.gray
         self.tabBar.isTranslucent = true
@@ -85,7 +90,7 @@ extension TqlTabBar : UITabBarControllerDelegate,CustomTabBarDelegate{
          */
         self.customTabBar1.plusBtn.isSelected = true
         
-        let page6 = TabBarSubPage6()
+        let page6 = TqlNewPage()
         self.definesPresentationContext = true
         //page6.view.backgroundColor = UIColor.clear
         //page6.modalPresentationStyle = .custom

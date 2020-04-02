@@ -17,6 +17,11 @@ class JdJhTabBar: UITabBarController {
         self.setTabBar()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     func setTabBar(){
         
         let page1 = TabBarSubPage1()
@@ -26,11 +31,12 @@ class JdJhTabBar: UITabBarController {
         let page5 = TabBarSubPage5()
         
         
-        self.setTabbarItemStyle(viewController:page1, img: "首页_未选中", selectImg: "首页_选中", title: "首页",tag: 1)
-        self.setTabbarItemStyle(viewController:page2, img: "发现_未选中", selectImg: "发现_选中", title: "发现",tag: 2)
-        self.setTabbarItemStyle(viewController:page3, img: "post_normal", selectImg: "", title: "",tag: 3)
-        self.setTabbarItemStyle(viewController:page4, img: "朋友_未选中", selectImg: "朋友_选中", title: "朋友",tag: 4)
-        self.setTabbarItemStyle(viewController:page5, img: "我的_未选中", selectImg: "我的_选中", title: "我的",tag: 5)
+        self.setTabbarItemStyle(viewController:page1, img: "home_unselected", selectImg: "home_selected", title: "首页", tag: 0)
+        self.setTabbarItemStyle(viewController:page2, img: "find_unselected", selectImg: "find_selected", title: "发现",tag: 1)
+        self.setTabbarItemStyle(viewController:page3, img: "add_unselected", selectImg: "add_selected", title: "添加",tag: 2)
+        self.setTabbarItemStyle(viewController:page4, img: "friend_unselected", selectImg: "friend_selected", title: "朋友",tag: 3)
+        self.setTabbarItemStyle(viewController:page5, img: "mine_unselected", selectImg: "mine_selected", title: "我的",tag: 4)
+        
         
         self.tabBar.tintColor = UIColor.gray
         self.tabBar.isTranslucent = true
@@ -54,12 +60,12 @@ class JdJhTabBar: UITabBarController {
         viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor(hex:"#1296db")], for: .selected)
         viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor(hex:"#cdcdcd")], for: .normal)
         
-        if(tag == 3){
-            viewController.tabBarItem.imageInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5) //设置图片的间距
-            viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 0.1)], for:.normal)
-        }else{
-            viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10)], for:.normal)
-        }
+//        if(tag == 3){
+//            viewController.tabBarItem.imageInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5) //设置图片的间距
+//            viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 0.1)], for:.normal)
+//        }else{
+//            viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10)], for:.normal)
+//        }
     }
     
 }
@@ -78,7 +84,7 @@ extension JdJhTabBar : UITabBarControllerDelegate{
            modalPresentationStyle可以设置模态是否隐藏
              */
             
-            let page6 = TabBarSubPage6()
+            let page6 = JdJhNewPage()
             self.definesPresentationContext = true
 //            page6.view.backgroundColor = UIColor.clear
             self.present(page6, animated: true, completion: nil)
