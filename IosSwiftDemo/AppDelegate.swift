@@ -73,6 +73,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             name: NSNotification.Name("vc_applicationWillEnterForeground"),
             object: nil)
     }
+    
+    
+    //监听屏幕解锁
+    func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication) {
+        NotificationCenter.default.post(
+            name:NSNotification.Name("vc_applicationProtectedDataDidBecomeAvailable"), object: nil)
+    }
 
 
 }
