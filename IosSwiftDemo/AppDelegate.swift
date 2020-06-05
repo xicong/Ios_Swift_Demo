@@ -39,6 +39,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    
+    /// 程序进入前台
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        //        NotificationCenter.default.post(name: IntoForegroundKey, object: nil)
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        NotificationCenter.default.post(
+            name: NSNotification.Name("vc_applicationDidBecomeActive"),
+            object: nil)
+    }
+    
+    
+    //程序进入后台的时候
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        //        NotificationCenter.default.post(name: IntoBackgroundKey, object: nil)
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        NotificationCenter.default.post(
+            name: NSNotification.Name("vc_applicationDidEnterBackground"),
+            object: nil)
+    }
+    
+    //app从后台进入前台
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        //        HWPrint("***************app从后台进入前台****************")
+        
+        //        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil, userInfo: ["Renish":"Dadhaniya"])
+        //http://www.imooc.com/wenda/detail/568092
+        NotificationCenter.default.post(
+            name: NSNotification.Name("vc_applicationWillEnterForeground"),
+            object: nil)
+    }
 
 
 }
